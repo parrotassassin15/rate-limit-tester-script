@@ -1,10 +1,14 @@
 # Test Rate Limiting on Websites
 
+<br />
+<br />
 
 Usage:
 ``
 chmod +x rate-limit-tester && ./rate-limit-tester.sh <domain>
 ``
+<br />
+<br />
 
 Screenshots showing results from tool: 
 
