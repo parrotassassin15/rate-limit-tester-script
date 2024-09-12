@@ -34,7 +34,7 @@ while [ $REQUEST_COUNT -lt $TOTAL_REQUESTS ] && [ $(date +%s) -lt $END_TIME ]; d
     echo "Request $REQUEST_COUNT sent with response code: $RESPONSE_CODE"
 
     # check if online 
-    if [ "$RESPONSE_CODE" == "000"]; then
+    if [ "$RESPONSE_CODE" == "000" ]; then
         echo "${red}[!] Check if you are online, cannot connect properly"
         exit 0
     fi
