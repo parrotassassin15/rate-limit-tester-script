@@ -10,7 +10,7 @@ chmod +x rate-limit-tester && ./rate-limit-tester.sh <domain>
 <br />
 <br />
 
-Screenshots showing results from tool: 
+## Screenshots showing results from tool
 
 When rate limiting is implemented: 
 
