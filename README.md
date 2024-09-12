@@ -1,1 +1,2 @@
-# rate-limit-tester-script
+# Test Rate Limiting on Websites
+
