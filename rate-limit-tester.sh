@@ -32,6 +32,12 @@ while [ $REQUEST_COUNT -lt $TOTAL_REQUESTS ] && [ $(date +%s) -lt $END_TIME ]; d
     RESPONSE_CODES+=("$RESPONSE_CODE")
     REQUEST_COUNT=$((REQUEST_COUNT + 1))
     echo "Request $REQUEST_COUNT sent with response code: $RESPONSE_CODE"
+
+    # check if online 
+    if [ "$RESPONSE_CODE" == "000"]; then
+        echo "${red}[!] Check if you are online, cannot connect properly"
+        exit 0
+    fi
     
     # check if rate limiting is detected (response code 429)
     if [ "$RESPONSE_CODE" == "429" ]; then
